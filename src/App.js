@@ -31,8 +31,8 @@ class App extends Component {
 
     const api =
       process.env.NODE_ENV === 'development'
-        ? '/test/stabled'
-        : 'https://qm2x97ii2c.execute-api.us-east-2.amazonaws.com/test'; // https://mko6b9drb2.execute-api.us-east-1.amazonaws.com/test/stabled
+        ? '/stabled'
+        : 'https://qm2x97ii2c.execute-api.us-east-2.amazonaws.com/test';
     const data = { data: e.target.searchQuery.value };
     console.log(data);
     axios({
