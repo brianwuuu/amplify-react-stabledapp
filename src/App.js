@@ -57,9 +57,12 @@ class App extends Component {
   render() {
     return (
       <Container className='p-5' id='container' name='container'>
-        <h1> Welcome to Stable Diffusion AI</h1>
+        <h1><center> Welcome to Columbia EE 6770 Final Project </center></h1>
+        <h3><center> EAT: AWS Generative AI with Stable Diffusion</center></h3>
+        <h4><center> Zhenguo Wu and Chuan-Tung Lin</center></h4>
+        <h4><center> Professor: Thomas Woo</center></h4>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Group className='mb-3' controlId='formBasicEmail'>
+          <Form.Group className='mb-3' controlid='formBasicEmail'>
             <Form.Label>Enter Text to convert Image</Form.Label>
             <Form.Control
               type='text'
@@ -67,7 +70,7 @@ class App extends Component {
               required
               autoFocus={true}
               name='searchQuery'
-              controlId='searchQuery'
+              controlid='searchQuery'
               defaultValue={this.state.val}
             />
             <Form.Text className='text-muted'>
