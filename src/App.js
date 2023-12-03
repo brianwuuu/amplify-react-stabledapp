@@ -57,16 +57,16 @@ class App extends Component {
   render() {
     return (
       <Container className='p-5' id='container' name='container'>
-        <h1><center> Welcome to Columbia EE 6770 Final Project </center></h1>
-        <h3><center> EAT: AWS Generative AI with Stable Diffusion</center></h3>
-        <h4><center> Zhenguo Wu and Chuan-Tung Lin</center></h4>
+        <h1><center> Stable Diffusion Text-to-Image Generation on AWS </center></h1>
+        <h3><center> Columbia ELENE6770: Final Project  </center></h3>
+        <h4><center> Zhenguo Wu (zw2542) and Chuan-Tung Lin (cl4030)</center></h4>
         <h4><center> Professor: Thomas Woo</center></h4>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group className='mb-3' controlid='formBasicEmail'>
-            <Form.Label>Enter Text to convert Image</Form.Label>
+            <Form.Label>Enter text prompt to be converted to image</Form.Label>
             <Form.Control
               type='text'
-              placeholder='Enter text to convert image'
+              placeholder='Enter text here to be converted to image'
               required
               autoFocus={true}
               name='searchQuery'
@@ -74,7 +74,7 @@ class App extends Component {
               defaultValue={this.state.val}
             />
             <Form.Text className='text-muted'>
-              We'll attempt our best to create image you will love it!
+              We are committed to producing the best images. The loading process is anticipated to take around 15 seconds.
             </Form.Text>
           </Form.Group>
           <Button
